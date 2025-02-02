@@ -91,9 +91,9 @@ def generate_gantt_chart(result, processes):
 
 
     # Rotas da Fase 2
-    @app.route('/')
-    def fase2():
-        return render_template('index_fase2.html')
+   # @app.route('/')
+   # def fase2():
+   #     return render_template('index_fase2.html')
  
     @app.route('/adicionarpaginas', methods=['POST'])
     def gerar_paginas_aleatorias(processos, max_pagina_id=1000):
