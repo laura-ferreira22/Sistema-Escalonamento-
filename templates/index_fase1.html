@@ -31,6 +31,9 @@
             
             <label for="deadline">Deadline:</label><br>
             <input type="number" id="deadline" name="deadline" required><br>
+
+            <label for="paginas">Páginas por processo (máx. 10):</label>
+            <input type="number" id="paginas" min="1" max="10" value="5">
             
             <button type="submit">Adicionar</button>
         </form>
@@ -55,6 +58,15 @@
             <button type="submit">Executar</button>
         </form>
         
+        <div class="form-container">
+            <label for="algoritmo">Escolha o algoritmo:</label>
+            <select id="algoritmo">
+                <option value="FIFO">FIFO</option>
+                <option value="LRU">LRU</option>
+            </select>
+            <button id="iniciar-simulacao">Iniciar Simulação</button>
+        </div>
+        
         <div class="graficos">
             <h2>Resultado</h2>
             <p id="result"></p>
@@ -67,6 +79,14 @@
                     <tbody id="gantt-body"></tbody>
                 </table>
         </div>
+
+        <div class="graficos_pag">
+            <h2>RAM</h2>
+            <canvas id="grafico-ram"></canvas>
+            <h2>DISCO</h2>
+            <canvas id="grafico-disco"></canvas>
+        </div>
+
     </div>
 
 
