@@ -157,7 +157,7 @@ O sistema também implementa algoritmos de substituição de páginas para geren
    - Escolha do algoritmo de escalonamento e substituição de página.
 - **Gráficos**: 
    - Gráfico de Gantt.
-   - Tabelas de meméria (RAM e Disco).
+   - Tabelas de memória (RAM e Disco).
   
 ## Exemplo de uso 
 1. Configure o sistema com um quantum de 5 e sobrecarga de 1.
